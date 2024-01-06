@@ -1,20 +1,17 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import Logo from "../../assets/header-logo.svg";
+import Header from "../../components/Header";
 import Profile from "../../assets/prof.svg";
 import arrow from "../../assets/arw-circle-right.svg";
 import Project from "../../assets/userhome-project.svg?react";
 import { Link } from "react-router-dom";
-
 export default function ProjectSubmission() {
   return (
     <>
       <div className="h-screen">
         <Navbar />
         <div className="mx-40">
-          <div className="flex my-12 justify-between">
-            <img src={Logo} alt="Logo" />
-
+          <Header>
             <div className="flex flex-col">
               <div className="flex text-right gap-3">
                 <div className="flex flex-col">
@@ -37,7 +34,7 @@ export default function ProjectSubmission() {
                 </div>
               </Link>
             </div>
-          </div>
+          </Header>
         </div>
         <div className="flex justify-center items-center">
           <div className="w-3/5 h-64 bg-purple/20  border-2 rounded-xl border-purple/30 flex flex-col justify-center items-center">

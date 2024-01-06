@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 import Logo from "../../assets/header-logo.svg";
 import Programming from "../../assets/programming.svg";
 import WebCLub from "../../assets/webclub.svg";
@@ -14,10 +15,9 @@ export default function Domains() {
       {/* Margin left and right */}
       <div className="mx-40">
         <div className="h-[92vh]">
-          <div className="flex my-6 justify-between">
-            <img src={Logo} alt="Logo" />
+          <Header>
             <h1 className="text-6xl text-grey font-bold">Domains</h1>
-          </div>
+          </Header>
           <div className="flex justify-center mt-48">
             <p className="text-5xl text-para-blue text-center w-8/12">
               There are 5 domains in GDSC, with each of their speciality,
