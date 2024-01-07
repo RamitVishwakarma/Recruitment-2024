@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 import Logo from "../../assets/header-logo.svg";
 import back from "../../assets/arrRight.svg";
 import Close from "../../assets/close.svg?react";
@@ -54,10 +55,9 @@ const AllUsers = () => {
     <>
       <Navbar />
       <div className="mx-40">
-        <div className="flex my-6 justify-between items-center">
-          <img src={Logo} alt="Logo" />
+        <Header>
           <h1 className="text-6xl font-bold text-grey">Design Candidates</h1>
-        </div>
+        </Header>
       </div>
 
       <div className="flex justify-between mx-40">
@@ -89,7 +89,7 @@ const AllUsers = () => {
             className={`flex items-center px-5 py-1 gap-2 border-2 rounded-full border-purple text-purple ${
               project ? "bg-purple/10" : ""
             }`}>
-            {project ? <Close id="project-filter-close"/> : ""}
+            {project ? <Close id="project-filter-close" /> : ""}
             <p>Projects&nbsp;Submitted:&nbsp;</p>
             <span className="font-bold">38</span>
           </button>
@@ -99,7 +99,7 @@ const AllUsers = () => {
             className={`flex items-center px-5 py-1 gap-2 border-2 rounded-full border-red text-red ${
               interviewed ? "bg-red/10" : ""
             }`}>
-            {interviewed ? <Close id="interview-filter-close"/> : ""}
+            {interviewed ? <Close id="interview-filter-close" /> : ""}
             <p>Interviewed:&nbsp;</p>
             <span className="font-bold">34</span>
           </button>

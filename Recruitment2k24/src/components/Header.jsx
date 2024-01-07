@@ -3,7 +3,7 @@ import Logo from "../assets/header-logo.svg";
 export default function Header({ children }) {
   return (
     <>
-      <div className="flex my-12 justify-between">
+      <div className="flex my-8 justify-between">
         <img src={Logo} alt="Logo" />
         {children}
       </div>

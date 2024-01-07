@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 import Logo from "../../assets/header-logo.svg";
 import ProjectIcon from "../../assets/project.svg";
 import QuizIcon from "../../assets/quiz.svg";
@@ -12,10 +13,9 @@ const Dashboard = () => {
     <>
       <Navbar />
       <div className="mx-40">
-        <div className="flex my-6 justify-between items-center">
-          <img src={Logo} alt="Logo" />
+        <Header>
           <h1 className="text-6xl font-bold text-grey">Dashboard</h1>
-        </div>
+        </Header>
       </div>
       <div className="grid grid-cols-2 grid-rows-2 gap-10 mx-40 mb-16">
         <Link to="/allusers" className="justify-self-end">

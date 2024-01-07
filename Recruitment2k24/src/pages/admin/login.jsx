@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 import Logo from "../../assets/header-logo.svg";
 
 const AdminLogin = () => {
@@ -7,11 +8,10 @@ const AdminLogin = () => {
     <>
       <div className="h-screen">
         <Navbar />
+        <Header>
+          <h1 className="text-6xl font-bold text-grey">Admin Login</h1>
+        </Header>
         <div className="mx-40">
-          <div className="flex my-6 justify-between">
-            <img src={Logo} alt="Logo" />
-            <h1 className="text-6xl font-bold text-grey">Admin Login</h1>
-          </div>
           <div className="w-80 mt-36 ease-in-out duration-200 mx-auto flex flex-col justify-center gap-6">
             <div>
               <label className="text-grey text-xl">Username</label>

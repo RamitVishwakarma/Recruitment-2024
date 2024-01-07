@@ -1,5 +1,6 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import Header from "../../components/Header";
 import Logo from "../../assets/header-logo.svg";
 import Profile from "../../assets/prof.svg";
 import Pfp from "../../assets/userprofile-pfp.svg";
@@ -17,9 +18,7 @@ export default function UserProfile() {
       <div className="h-screen">
         <Navbar />
         <div className="mx-40">
-          <div className="flex my-[3rem] justify-between">
-            <img src={Logo} alt="Logo" />
-            {/* solicitation section */}
+          <Header>
             <div className="flex flex-col">
               <div className="flex text-right gap-3">
                 <div className="flex flex-col">
@@ -33,7 +32,7 @@ export default function UserProfile() {
                 </div>
               </div>
             </div>
-          </div>
+          </Header>
           {/* whole form wrapper */}
           <div className="flex gap-7 justify-center items-center">
             {/* wrapper div */}

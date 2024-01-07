@@ -1,7 +1,6 @@
 import Navbar from "../../components/Navbar.jsx";
 import Footer from "../../components/Footer.jsx";
 import Header from "../../components/Header.jsx";
-import Logo from "../../assets/header-logo.svg";
 import Name from "../../assets/input-name.svg";
 import Admission from "../../assets/input-admission.svg";
 import Year from "../../assets/input-year.svg";

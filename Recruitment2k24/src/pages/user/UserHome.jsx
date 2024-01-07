@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import Logo from "../../assets/header-logo.svg";
+import Header from "../../components/Header";
 import arrow from "../../assets/arw-circle-right.svg";
 import Profile from "../../assets/prof.svg";
 import Quiz from "../../assets/userhome-quiz.svg";
@@ -14,9 +14,7 @@ export default function UserHome() {
       <div className="h-screen">
         <Navbar />
         <div className="mx-40">
-          <div className="flex my-12 justify-between">
-            <img src={Logo} alt="Logo" />
-
+          <Header>
             <div className="flex flex-col">
               <div className="flex text-right gap-3">
                 <div className="flex flex-col">
@@ -39,7 +37,7 @@ export default function UserHome() {
                 </div>
               </Link>
             </div>
-          </div>
+          </Header>
           {/* Quiz and project  */}
           <div className="flex justify-center mt-20 gap-32">
             <div className="flex flex-col">

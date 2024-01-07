@@ -15,7 +15,7 @@ import Behance from "../../assets/behance.svg?react";
 import Customlink from "../../assets/customlink.svg?react";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import validator from 'validator'
+import validator from "validator";
 
 const Profile = () => {
   const [users, setUser] = useState({
@@ -46,10 +46,9 @@ const Profile = () => {
       <Navbar />
 
       <div className="mx-40">
-        <div className="flex my-6 justify-between items-center">
-          <img src={Logo} alt="" />
+        <Header>
           <h1 className="text-6xl font-bold text-grey">Design Candidates</h1>
-        </div>
+        </Header>
       </div>
       <div className="flex justify-between mx-40 text-button-text text-2xl">
         <Link to="/allusers">
@@ -82,9 +81,11 @@ const Profile = () => {
           <button
             onClick={toggleShortlisted}
             className={`flex items-center py-2 px-6 rounded-lg ${
-              users.shortlisted ? "bg-light-blue/20 text-para-blue" : "bg-lime text-button-text"
+              users.shortlisted
+                ? "bg-light-blue/20 text-para-blue"
+                : "bg-lime text-button-text"
             } `}>
-            {users.shortlisted ? <Checked id='shortlist-checkmark'/> : <Add />}
+            {users.shortlisted ? <Checked id="shortlist-checkmark" /> : <Add />}
             <div className="p-2 text-4xl">
               {users.shortlisted ? "Shortlisted" : "Shortlist"}
             </div>
@@ -106,7 +107,7 @@ const Profile = () => {
                     href={users.project}>
                     {users.project}
                   </a>
-                  <Extlink/>
+                  <Extlink />
                 </div>
               ) : (
                 <p className="text-4xl flex text-red">
@@ -120,32 +121,32 @@ const Profile = () => {
               <div className="flex gap-6 items-center">
                 {users.github ? (
                   <a target="_blank" href={users.github}>
-                    <Github className='nav-icons-svg'/>
+                    <Github className="nav-icons-svg" />
                   </a>
                 ) : null}
                 {users.hackerrank ? (
                   <a target="_blank" href={users.hackerrank}>
-                    <Hackerrank className='nav-icons-svg'/> 
+                    <Hackerrank className="nav-icons-svg" />
                   </a>
                 ) : null}
                 {users.linkedin ? (
                   <a target="_blank" href={users.linkedin}>
-                    <Linkedin className='nav-icons-svg'/>
+                    <Linkedin className="nav-icons-svg" />
                   </a>
                 ) : null}
                 {users.dribble ? (
                   <a target="_blank" href={users.dribble}>
-                    <Dribbble className='nav-icons-svg'/>
+                    <Dribbble className="nav-icons-svg" />
                   </a>
                 ) : null}
                 {users.behance ? (
                   <a target="_blank" href={users.behance}>
-                    <Behance className='nav-icons-svg'/>
+                    <Behance className="nav-icons-svg" />
                   </a>
                 ) : null}
                 {users.custom ? (
                   <a target="_blank" href={users.custom}>
-                    <Customlink className='nav-icons-svg'/>
+                    <Customlink className="nav-icons-svg" />
                   </a>
                 ) : null}
               </div>
