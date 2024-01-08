@@ -1,7 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import Logo from "../../assets/header-logo.svg";
 import Programming from "../../assets/programming.svg";
 import WebCLub from "../../assets/webclub.svg";
 import Android from "../../assets/android.svg";
