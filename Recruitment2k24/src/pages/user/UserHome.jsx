@@ -1,8 +1,7 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import arrow from "../../assets/arw-circle-right.svg";
-import Profile from "../../assets/prof.svg";
+import HeaderProfile from "../../components/HeaderProfile";
 import Quiz from "../../assets/userhome-quiz.svg";
 import Project from "../../assets/userhome-project.svg";
 import Hourglass from "../../assets/hourglass.svg";
@@ -15,28 +14,7 @@ export default function UserHome() {
         <Navbar />
         <div className="mx-40">
           <Header>
-            <div className="flex flex-col">
-              <div className="flex text-right gap-3">
-                <div className="flex flex-col">
-                  <span className="text-grey text-xl">Hello</span>
-                  <span className="text-grey text-2xl font-bold">
-                    Ramit Vishwakarma
-                  </span>
-                </div>
-                <div>
-                  <img src={Profile} />
-                </div>
-              </div>
-              {/* conditional if the profile is not completed */}
-              <Link to="/user-profile">
-                <div className="flex ml-32 mt-1 border-b-2 border-red">
-                  <span className=" text-red text-lg">
-                    Complete Profile &nbsp;
-                  </span>
-                  <img className="w-6" src={arrow} />
-                </div>
-              </Link>
-            </div>
+            <HeaderProfile />
           </Header>
           {/* Quiz and project  */}
           <div className="flex justify-center mt-20 gap-32">

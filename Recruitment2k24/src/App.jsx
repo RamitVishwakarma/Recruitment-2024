@@ -6,7 +6,7 @@ import UserHome from "./pages/user/UserHome";
 import ProjectSubmission from "./pages/user/ProjectSubmission";
 import UserProfile from "./pages/user/UserProfile";
 import QuizHome from "./pages/user/QuizHome";
-
+import QuizPage from "./pages/user/QuizPage";
 // Admin pages import
 import AdminLogin from "./pages/admin/login";
 import Dashboard from "./pages/admin/dashboard";
@@ -27,7 +27,7 @@ function App() {
         <Route path="/project" element={<ProjectSubmission />} />
         <Route path="/user-profile" element={<UserProfile />} />
         <Route path="/quizhome" element={<QuizHome />} />
-        {/* <Route path="/quiz" element={<Quiz/>} /> */}
+        <Route path="/quiz" element={<QuizPage />} />
         {/* admin routes */}
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/dashboard" element={<Dashboard />} />

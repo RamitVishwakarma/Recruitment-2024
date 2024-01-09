@@ -1,8 +1,7 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Header from "../../components/Header";
-import Logo from "../../assets/header-logo.svg";
-import Profile from "../../assets/prof.svg";
+import HeaderProfile from "../../components/HeaderProfile";
 import Pfp from "../../assets/userprofile-pfp.svg";
 import Upload from "../../assets/userprofile-upload.svg";
 import Github from "../../assets/github.svg";
@@ -19,19 +18,8 @@ export default function UserProfile() {
         <Navbar />
         <div className="mx-40">
           <Header>
-            <div className="flex flex-col">
-              <div className="flex text-right gap-3">
-                <div className="flex flex-col">
-                  <span className="text-grey text-xl">Hello</span>
-                  <span className="text-grey text-2xl font-bold">
-                    Ramit Vishwakarma
-                  </span>
-                </div>
-                <div>
-                  <img src={Profile} />
-                </div>
-              </div>
-            </div>
+            {/* REMOVE THE COMPLETE PROFILE TAG FROM HERE */}
+            <HeaderProfile />
           </Header>
           {/* whole form wrapper */}
           <div className="flex gap-7 justify-center items-center">
