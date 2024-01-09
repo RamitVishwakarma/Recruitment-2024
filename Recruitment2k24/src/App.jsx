@@ -5,6 +5,7 @@ import RegistrationForm from "./pages/user/RegistrationForm";
 import UserHome from "./pages/user/UserHome";
 import ProjectSubmission from "./pages/user/ProjectSubmission";
 import UserProfile from "./pages/user/UserProfile";
+import QuizHome from "./pages/user/QuizHome";
 
 // Admin pages import
 import AdminLogin from "./pages/admin/login";
@@ -25,8 +26,8 @@ function App() {
         <Route path="/home" element={<UserHome />} />
         <Route path="/project" element={<ProjectSubmission />} />
         <Route path="/user-profile" element={<UserProfile />} />
-        {/* <Route path="/quizhome" element={<QuizHome/>} />
-        <Route path="/quiz" element={<Quiz/>} /> */}
+        <Route path="/quizhome" element={<QuizHome />} />
+        {/* <Route path="/quiz" element={<Quiz/>} /> */}
         {/* admin routes */}
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/dashboard" element={<Dashboard />} />
