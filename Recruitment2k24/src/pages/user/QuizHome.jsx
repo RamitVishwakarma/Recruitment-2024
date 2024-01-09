@@ -25,39 +25,35 @@ export default function QuizHome() {
                 </div>
               </div>
               {/* conditional if the profile is not completed */}
-              <Link to="/user-profile">
-                <div className="flex ml-32 mt-1 border-b-2 border-red">
-                  <span className=" text-red text-lg">
-                    Complete Profile &nbsp;
-                  </span>
-                  <img className="w-6" src={arrow} />
-                </div>
-              </Link>
             </div>
           </Header>
-          <h1 className="text-5xl text-center">Lets start the Quiz!</h1>
-          <div className="mx-auto m-5 bg-red/20 w-3/5 h-[20rem] flex flex-col justify-center items-center rounded-lg">
-            <div className="text-red font-bold text-2xl text-center w-[60rem]">
+          <h1 className="text-5xl font-bold text-center pb-2">
+            Lets start the Quiz!
+          </h1>
+          <div className="mx-auto mt-2 bg-red/20 w-3/5 h-2/5 flex flex-col justify-center items-center rounded-lg">
+            <div className="text-red font-bold text-3xl text-center p-5">
               Guidelines
             </div>
 
-            <ul className="text-red list-disc px-20 py-10 text-xl">
-              <li className="w-[]">
+            <ul className="text-red w-[95%] list-disc px-20 pb-10 text-2xl">
+              <li className="">
                 This is a timed quiz. You will only get 30 mins to complete it.
               </li>
-              <li>
+              <li className="mt-3 max-w-4/5">
                 You are not allowed to switch tabs or window, if you do, you
                 will be disqualified.
               </li>
-              <li>
+              <li className="mt-3 max-w-4/5">
                 This quiz contains 20 questions, try your best to attempt them
                 all.
               </li>
-              <li>All the very best to you. See you later.</li>
+              <li className="mt-3 max-w-4/5">
+                All the very best to you. See you later.
+              </li>
             </ul>
           </div>
           <div className="flex justify-center">
-            <button className="mx-auto font-bold text-xl text-button-text bg-lime rounded-lg hover:bg-button-hover px-6 py-2">
+            <button className="mx-auto mt-4 font-bold text-xl text-button-text bg-lime rounded-lg hover:bg-button-hover px-10 py-3">
               Begin
             </button>
           </div>
